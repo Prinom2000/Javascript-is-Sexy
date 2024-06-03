@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pic Change</title>
+    <style>
+        .dark{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<script>
+    function light_on(){
+        document.getElementById("pm").innerHTML= "<img src='https://th.bing.com/th/id/OIP.565TcOat3QSHtMsuwdW4WwAAAA?rs=1&pid=ImgDetMain' alt=''  style='height: 500px; width:500px;'>"
+        document.querySelector('#body').classList.remove('dark');
+    }
+    function light_off(){
+        document.getElementById("pm").innerHTML= "<img src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png' alt=''  style='height: 500px; width:500px;'>"
+        document.querySelector('#body').classList.add('dark');
+    }
+</script>
+
+<body id="body" class="dark">
+    <div id="pm">
+        <img src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" alt="" style="height: 500px; width:500px;">
+    </div>
+
+    <button type="button" onclick="light_on()">ON</button>
+    <button type="button" onclick="light_off()">OFF</button>
+
+    
+    
+</body>
+</html>
